@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "490F89AD1F2FE0AB00A451BB"
+               BlueprintIdentifier = "493B1FBA1F29F7EC00B63347"
                BuildableName = "FinalAssessment.app"
                BlueprintName = "FinalAssessment"
                ReferencedContainer = "container:FinalAssessment.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "490F89AD1F2FE0AB00A451BB"
+            BlueprintIdentifier = "493B1FBA1F29F7EC00B63347"
             BuildableName = "FinalAssessment.app"
             BlueprintName = "FinalAssessment"
             ReferencedContainer = "container:FinalAssessment.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "490F89AD1F2FE0AB00A451BB"
+            BlueprintIdentifier = "493B1FBA1F29F7EC00B63347"
             BuildableName = "FinalAssessment.app"
             BlueprintName = "FinalAssessment"
             ReferencedContainer = "container:FinalAssessment.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "490F89AD1F2FE0AB00A451BB"
+            BlueprintIdentifier = "493B1FBA1F29F7EC00B63347"
             BuildableName = "FinalAssessment.app"
             BlueprintName = "FinalAssessment"
             ReferencedContainer = "container:FinalAssessment.xcodeproj">
