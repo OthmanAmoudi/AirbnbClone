@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,26 +19,43 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="105.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6tL-VJ-osQ">
-                        <rect key="frame" x="118" y="10" width="194" height="40"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6tL-VJ-osQ">
+                        <rect key="frame" x="118" y="10" width="194" height="41"/>
                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1D-X1-hg7">
-                        <rect key="frame" x="118" y="58" width="194" height="37"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1D-X1-hg7">
+                        <rect key="frame" x="118" y="59" width="194" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="37" id="Cda-vn-Psf"/>
+                        </constraints>
                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EXB-ts-8DW">
-                        <rect key="frame" x="8" y="10" width="102" height="85"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EXB-ts-8DW">
+                        <rect key="frame" x="15" y="10" width="88" height="86"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="88" id="ENG-Zg-5bL"/>
+                        </constraints>
                     </imageView>
                 </subviews>
+                <color key="backgroundColor" red="0.49027228355407715" green="0.7335847020149231" blue="0.95299988985061646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="v1D-X1-hg7" firstAttribute="top" secondItem="6tL-VJ-osQ" secondAttribute="bottom" constant="8" symbolic="YES" id="7zZ-Nv-2bp"/>
+                    <constraint firstItem="EXB-ts-8DW" firstAttribute="top" secondItem="6tL-VJ-osQ" secondAttribute="top" id="BvR-iM-ohp"/>
+                    <constraint firstItem="EXB-ts-8DW" firstAttribute="bottom" secondItem="v1D-X1-hg7" secondAttribute="bottom" id="EkG-w9-Apb"/>
+                    <constraint firstItem="v1D-X1-hg7" firstAttribute="leading" secondItem="EXB-ts-8DW" secondAttribute="trailing" constant="15" id="Jgd-0C-n30"/>
+                    <constraint firstItem="6tL-VJ-osQ" firstAttribute="leading" secondItem="v1D-X1-hg7" secondAttribute="leading" id="TKA-Co-uxH"/>
+                    <constraint firstItem="EXB-ts-8DW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="d6h-Rd-dV8"/>
+                    <constraint firstItem="EXB-ts-8DW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="kg0-65-ke5"/>
+                    <constraint firstItem="6tL-VJ-osQ" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="l51-Ut-sHQ"/>
+                    <constraint firstItem="6tL-VJ-osQ" firstAttribute="trailing" secondItem="v1D-X1-hg7" secondAttribute="trailing" id="o1O-ao-fG7"/>
+                    <constraint firstItem="EXB-ts-8DW" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="sr2-xM-xNm"/>
+                </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" red="0.45749346110994654" green="0.68837079525217415" blue="0.79893237352371216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <connections>
                 <outlet property="emailLblCell" destination="v1D-X1-hg7" id="y6j-Rb-K2w"/>
                 <outlet property="nameLblCell" destination="6tL-VJ-osQ" id="xNu-gf-kCc"/>

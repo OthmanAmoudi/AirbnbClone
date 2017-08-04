@@ -12,18 +12,18 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RoomCell" rowHeight="311" id="KGk-i7-Jjw" customClass="RoomTableViewCell" customModule="FinalAssessment" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="315" height="311"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RoomCell" rowHeight="271" id="KGk-i7-Jjw" customClass="RoomTableViewCell" customModule="FinalAssessment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="315" height="271"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="315" height="311"/>
+                <rect key="frame" x="0.0" y="0.0" width="315" height="271"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="cxf-eO-rCe">
-                        <rect key="frame" x="6" y="192" width="299" height="49"/>
-                        <color key="backgroundColor" red="0.43625813722610474" green="0.72035545110702515" blue="0.98021262884140015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="cxf-eO-rCe">
+                        <rect key="frame" x="6" y="192" width="299" height="36"/>
+                        <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="0.56763698630136983" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="49" id="pv8-kN-U0a"/>
+                            <constraint firstAttribute="height" constant="36" id="ILY-w9-IGu"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                         <nil key="textColor"/>
@@ -34,7 +34,7 @@
                         <color key="backgroundColor" red="0.43625813722610474" green="0.72035545110702515" blue="0.98021262884140015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </imageView>
                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ild-dw-PKn">
-                        <rect key="frame" x="6" y="235.5" width="299" height="23.5"/>
+                        <rect key="frame" x="6" y="236" width="299" height="23.5"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Availability: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9XE-Ot-N6k">
                                 <rect key="frame" x="0.0" y="0.0" width="91.5" height="23.5"/>
@@ -80,16 +80,16 @@
                     </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="cxf-eO-rCe" firstAttribute="top" secondItem="arF-Fs-lq8" secondAttribute="bottom" constant="8" symbolic="YES" id="0JC-el-Jl5"/>
-                    <constraint firstItem="cxf-eO-rCe" firstAttribute="trailing" secondItem="ild-dw-PKn" secondAttribute="trailing" id="0OI-Te-Mxb"/>
-                    <constraint firstItem="arF-Fs-lq8" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Gpc-IF-xZu"/>
-                    <constraint firstItem="arF-Fs-lq8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-3" id="I2c-2G-Ow4"/>
-                    <constraint firstItem="cxf-eO-rCe" firstAttribute="leading" secondItem="ild-dw-PKn" secondAttribute="leading" id="NAJ-Yu-kaR"/>
-                    <constraint firstItem="cxf-eO-rCe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-2" id="PP9-xv-HJ3"/>
-                    <constraint firstItem="arF-Fs-lq8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="QC9-Tz-tJa"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="ild-dw-PKn" secondAttribute="trailing" constant="2" id="XAC-Rk-ZsW"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="ild-dw-PKn" secondAttribute="bottom" constant="43.5" id="Y5W-vx-HA5"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="cxf-eO-rCe" secondAttribute="bottom" constant="61.5" id="aGe-bI-nok"/>
+                    <constraint firstItem="arF-Fs-lq8" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="17h-Kr-E8f"/>
+                    <constraint firstItem="ild-dw-PKn" firstAttribute="top" secondItem="cxf-eO-rCe" secondAttribute="bottom" constant="8" id="1j1-z8-n9f"/>
+                    <constraint firstItem="cxf-eO-rCe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-2" id="2bA-st-vbp"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ild-dw-PKn" secondAttribute="bottom" constant="3.5" id="P13-8v-lTB"/>
+                    <constraint firstItem="cxf-eO-rCe" firstAttribute="leading" secondItem="ild-dw-PKn" secondAttribute="leading" id="SFg-Ug-vX4"/>
+                    <constraint firstItem="cxf-eO-rCe" firstAttribute="top" secondItem="arF-Fs-lq8" secondAttribute="bottom" constant="8" symbolic="YES" id="SQK-LV-S6R"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="cxf-eO-rCe" secondAttribute="trailing" constant="2" id="Sb6-xd-FIe"/>
+                    <constraint firstItem="arF-Fs-lq8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="dOU-uV-pDG"/>
+                    <constraint firstItem="arF-Fs-lq8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-3" id="u0c-6a-AVb"/>
+                    <constraint firstItem="cxf-eO-rCe" firstAttribute="trailing" secondItem="ild-dw-PKn" secondAttribute="trailing" id="xEl-UB-ye8"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" red="0.43625813722610474" green="0.72035545110702515" blue="0.98021262884140015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -99,7 +99,7 @@
                 <outlet property="dateLabelCell" destination="rfm-6O-gPd" id="fRg-Zv-h0B"/>
                 <outlet property="titleLabelCell" destination="cxf-eO-rCe" id="IMm-7Y-wTI"/>
             </connections>
-            <point key="canvasLocation" x="57.5" y="69.5"/>
+            <point key="canvasLocation" x="57.5" y="49.5"/>
         </tableViewCell>
     </objects>
 </document>

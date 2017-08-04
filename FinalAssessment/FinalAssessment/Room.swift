@@ -9,6 +9,7 @@
 import Foundation
 
 struct Room {
+    let roomID:String
     let title:String
     let description:String
     let roomPicutreURL:String

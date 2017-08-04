@@ -32,8 +32,8 @@ class MapViewController: UIViewController,CLLocationManagerDelegate {
         myLatitude = String(location.coordinate.latitude)
         myLongtiude = String(location.coordinate.longitude)
         
-        print(myLatitude)
-        print(myLongtiude)
+        //print(myLatitude)
+        //print(myLongtiude)
         
         
         

@@ -23,6 +23,8 @@ class LogInViewController: UIViewController {
             }
         }
 
+        LoginEmailTF.text = "tomy@hil.com"
+        LoginPasswordTF.placeholder = "pasword is 123456"
         LoginBtn.isEnabled = false
         handleTextFields()
     }

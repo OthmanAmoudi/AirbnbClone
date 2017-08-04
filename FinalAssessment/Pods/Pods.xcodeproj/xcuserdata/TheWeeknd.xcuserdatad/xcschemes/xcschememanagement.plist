@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Former.xcscheme</key>
+		<key>DatePickerDialog.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -19,27 +19,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>JSQMessagesViewController.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>JSQSystemSoundPlayer.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-FinalAssessment.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>ProgressHUD.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>SwiftForms.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -52,37 +37,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>478084F1D82B8A1F1F4519FF382F9BAE</key>
+		<key>184A1650DC0B648BD756068E60BF2C59</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>60BDC61FF3889FBE8EDD01E6CE114DE7</key>
+		<key>18F7CBB9DDC39446562821F3CF601FF1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6C86C23A20D556083050B51A330C7DE0</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A49653DE5C178056786C3F4942CA524F</key>
+		<key>526872F8524345B78B70868388494BB4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>C052BEBFBD0AB5218CC64BA3450F6547</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C7DCF2B547F7871B9BFD74DE93B0E173</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D0581AF7BF4A6DA140D280B19ECC7BFF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

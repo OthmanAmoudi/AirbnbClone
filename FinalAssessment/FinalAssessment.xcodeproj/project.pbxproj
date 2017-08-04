@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		43070992F0C8CF2885BD3AC4 /* Pods_FinalAssessment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C246167337B56069CBCCFE60 /* Pods_FinalAssessment.framework */; };
-		490F899E1F2E616300A451BB /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490F899D1F2E616300A451BB /* ContactsViewController.swift */; };
 		490F89A11F2E7FBE00A451BB /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490F899F1F2E7FBE00A451BB /* TableViewCell.swift */; };
 		490F89A21F2E7FBE00A451BB /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 490F89A01F2E7FBE00A451BB /* TableViewCell.xib */; };
+		4914878F1F30EC4900151E85 /* EnlargePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4914878E1F30EC4900151E85 /* EnlargePostViewController.swift */; };
+		491EE6221F3292B9008CC966 /* EnlargeFavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491EE6211F3292B9008CC966 /* EnlargeFavoriteViewController.swift */; };
 		493B1FBF1F29F7EC00B63347 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493B1FBE1F29F7EC00B63347 /* AppDelegate.swift */; };
 		493B1FC11F29F7EC00B63347 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493B1FC01F29F7EC00B63347 /* LogInViewController.swift */; };
 		493B1FC41F29F7EC00B63347 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 493B1FC21F29F7EC00B63347 /* Main.storyboard */; };
@@ -22,7 +23,6 @@
 		495718CF1F2A6B0800029CE0 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 495718CD1F2A6B0800029CE0 /* ProgressHUD.bundle */; };
 		49C2C1CF1F2BC41700957E45 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C2C1CE1F2BC41700957E45 /* ProfileViewController.swift */; };
 		49C2C1D11F2BC56C00957E45 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C2C1D01F2BC56C00957E45 /* User.swift */; };
-		49C2C1E21F2C7B6500957E45 /* JSQMessagesViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C2C1E11F2C7B6500957E45 /* JSQMessagesViewController.framework */; };
 		49C2C1E81F2CDD1D00957E45 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C2C1E71F2CDD1D00957E45 /* ActivityViewController.swift */; };
 		49C2C1EA1F2D335300957E45 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C2C1E91F2D335300957E45 /* EditProfileViewController.swift */; };
 		49E6970F1F306B3F002DE0F7 /* PostNewRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E6970E1F306B3F002DE0F7 /* PostNewRoomViewController.swift */; };
@@ -33,6 +33,12 @@
 		49E697191F30BFFB002DE0F7 /* RoomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49E697171F30BFFB002DE0F7 /* RoomTableViewCell.xib */; };
 		49E6971B1F30C3E9002DE0F7 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E6971A1F30C3E9002DE0F7 /* Room.swift */; };
 		49E6971D1F30D1FB002DE0F7 /* MyRoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E6971C1F30D1FB002DE0F7 /* MyRoomsViewController.swift */; };
+		49F936DF1F331FC000E841CB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F936DE1F331FC000E841CB /* SearchViewController.swift */; };
+		49F936E61F33B30F00E841CB /* BookingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F936E41F33B30F00E841CB /* BookingTableViewCell.swift */; };
+		49F936E71F33B30F00E841CB /* BookingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49F936E51F33B30F00E841CB /* BookingTableViewCell.xib */; };
+		49F936E91F33BC0700E841CB /* Booking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F936E81F33BC0700E841CB /* Booking.swift */; };
+		49F936EB1F33CBBE00E841CB /* EnlargeBookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F936EA1F33CBBE00E841CB /* EnlargeBookingViewController.swift */; };
+		49FC8F2A1F32199C00F3AC70 /* EnlargeMyRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FC8F291F32199C00F3AC70 /* EnlargeMyRoomViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,9 +56,10 @@
 
 /* Begin PBXFileReference section */
 		17C8710F03E0B5C8295BFCB8 /* Pods-FinalAssessment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalAssessment.release.xcconfig"; path = "Pods/Target Support Files/Pods-FinalAssessment/Pods-FinalAssessment.release.xcconfig"; sourceTree = "<group>"; };
-		490F899D1F2E616300A451BB /* ContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		490F899F1F2E7FBE00A451BB /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = ../TableViewCell.swift; sourceTree = "<group>"; };
 		490F89A01F2E7FBE00A451BB /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TableViewCell.xib; path = ../TableViewCell.xib; sourceTree = "<group>"; };
+		4914878E1F30EC4900151E85 /* EnlargePostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnlargePostViewController.swift; path = ../EnlargePostViewController.swift; sourceTree = "<group>"; };
+		491EE6211F3292B9008CC966 /* EnlargeFavoriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnlargeFavoriteViewController.swift; sourceTree = "<group>"; };
 		493B1FBB1F29F7EC00B63347 /* FinalAssessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalAssessment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		493B1FBE1F29F7EC00B63347 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		493B1FC01F29F7EC00B63347 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +86,12 @@
 		49E697171F30BFFB002DE0F7 /* RoomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RoomTableViewCell.xib; sourceTree = "<group>"; };
 		49E6971A1F30C3E9002DE0F7 /* Room.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		49E6971C1F30D1FB002DE0F7 /* MyRoomsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRoomsViewController.swift; sourceTree = "<group>"; };
+		49F936DE1F331FC000E841CB /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		49F936E41F33B30F00E841CB /* BookingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingTableViewCell.swift; sourceTree = "<group>"; };
+		49F936E51F33B30F00E841CB /* BookingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingTableViewCell.xib; sourceTree = "<group>"; };
+		49F936E81F33BC0700E841CB /* Booking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Booking.swift; sourceTree = "<group>"; };
+		49F936EA1F33CBBE00E841CB /* EnlargeBookingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnlargeBookingViewController.swift; sourceTree = "<group>"; };
+		49FC8F291F32199C00F3AC70 /* EnlargeMyRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnlargeMyRoomViewController.swift; sourceTree = "<group>"; };
 		C246167337B56069CBCCFE60 /* Pods_FinalAssessment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinalAssessment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA0146FFA20EDD4DACB9964C /* Pods-FinalAssessment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinalAssessment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FinalAssessment/Pods-FinalAssessment.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,7 +102,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				49E697131F3079EB002DE0F7 /* CoreLocation.framework in Frameworks */,
-				49C2C1E21F2C7B6500957E45 /* JSQMessagesViewController.framework in Frameworks */,
 				43070992F0C8CF2885BD3AC4 /* Pods_FinalAssessment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,24 +130,27 @@
 		493B1FBD1F29F7EC00B63347 /* FinalAssessment */ = {
 			isa = PBXGroup;
 			children = (
-				493B1FBE1F29F7EC00B63347 /* AppDelegate.swift */,
-				493B1FC01F29F7EC00B63347 /* LogInViewController.swift */,
-				493B1FD01F2A042900B63347 /* SignUpViewController.swift */,
+				49F936E21F33A5D200E841CB /* Cells */,
+				49F936E11F33A57E00E841CB /* Supporting Files */,
+				49F936E01F33A54D00E841CB /* Models */,
+				49F936E31F33A66100E841CB /* Controllers */,
+			);
+			path = FinalAssessment;
+			sourceTree = "<group>";
+		};
+		49F936E01F33A54D00E841CB /* Models */ = {
+			isa = PBXGroup;
+			children = (
 				49C2C1D01F2BC56C00957E45 /* User.swift */,
+				49F936E81F33BC0700E841CB /* Booking.swift */,
 				49E6971A1F30C3E9002DE0F7 /* Room.swift */,
-				49C2C1CE1F2BC41700957E45 /* ProfileViewController.swift */,
-				49C2C1E91F2D335300957E45 /* EditProfileViewController.swift */,
-				49E697101F3079D2002DE0F7 /* MapViewController.swift */,
-				49E6970E1F306B3F002DE0F7 /* PostNewRoomViewController.swift */,
-				493B1FC21F29F7EC00B63347 /* Main.storyboard */,
-				49C2C1E71F2CDD1D00957E45 /* ActivityViewController.swift */,
-				49E697161F30BFFB002DE0F7 /* RoomTableViewCell.swift */,
-				49E697171F30BFFB002DE0F7 /* RoomTableViewCell.xib */,
-				49E6971C1F30D1FB002DE0F7 /* MyRoomsViewController.swift */,
-				49E697141F30BEBC002DE0F7 /* FavoriteViewController.swift */,
-				490F899D1F2E616300A451BB /* ContactsViewController.swift */,
-				490F899F1F2E7FBE00A451BB /* TableViewCell.swift */,
-				490F89A01F2E7FBE00A451BB /* TableViewCell.xib */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		49F936E11F33A57E00E841CB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				493B1FC51F29F7EC00B63347 /* Assets.xcassets */,
 				493B1FC71F29F7EC00B63347 /* LaunchScreen.storyboard */,
 				493B1FD61F2A2F3000B63347 /* GoogleService-Info.plist */,
@@ -144,8 +159,44 @@
 				495718CB1F2A6B0800029CE0 /* ProgressHUD.m */,
 				495718CC1F2A6B0800029CE0 /* ProgressHUD.h */,
 				495718CA1F2A6B0700029CE0 /* FinalAssessment-Bridging-Header.h */,
+				493B1FBE1F29F7EC00B63347 /* AppDelegate.swift */,
 			);
-			path = FinalAssessment;
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49F936E21F33A5D200E841CB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				49E697161F30BFFB002DE0F7 /* RoomTableViewCell.swift */,
+				49E697171F30BFFB002DE0F7 /* RoomTableViewCell.xib */,
+				490F899F1F2E7FBE00A451BB /* TableViewCell.swift */,
+				490F89A01F2E7FBE00A451BB /* TableViewCell.xib */,
+				49F936E41F33B30F00E841CB /* BookingTableViewCell.swift */,
+				49F936E51F33B30F00E841CB /* BookingTableViewCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		49F936E31F33A66100E841CB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				493B1FC21F29F7EC00B63347 /* Main.storyboard */,
+				49C2C1CE1F2BC41700957E45 /* ProfileViewController.swift */,
+				49F936EA1F33CBBE00E841CB /* EnlargeBookingViewController.swift */,
+				493B1FC01F29F7EC00B63347 /* LogInViewController.swift */,
+				493B1FD01F2A042900B63347 /* SignUpViewController.swift */,
+				49C2C1E91F2D335300957E45 /* EditProfileViewController.swift */,
+				49E697101F3079D2002DE0F7 /* MapViewController.swift */,
+				49E6970E1F306B3F002DE0F7 /* PostNewRoomViewController.swift */,
+				49C2C1E71F2CDD1D00957E45 /* ActivityViewController.swift */,
+				4914878E1F30EC4900151E85 /* EnlargePostViewController.swift */,
+				49E6971C1F30D1FB002DE0F7 /* MyRoomsViewController.swift */,
+				49FC8F291F32199C00F3AC70 /* EnlargeMyRoomViewController.swift */,
+				49E697141F30BEBC002DE0F7 /* FavoriteViewController.swift */,
+				491EE6211F3292B9008CC966 /* EnlargeFavoriteViewController.swift */,
+				49F936DE1F331FC000E841CB /* SearchViewController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		9F7157D54477A23D84CB8E6F /* Pods */ = {
@@ -237,6 +288,7 @@
 				490F89A21F2E7FBE00A451BB /* TableViewCell.xib in Resources */,
 				493B1FD71F2A2F3000B63347 /* GoogleService-Info.plist in Resources */,
 				493B1FC61F29F7EC00B63347 /* Assets.xcassets in Resources */,
+				49F936E71F33B30F00E841CB /* BookingTableViewCell.xib in Resources */,
 				495718CF1F2A6B0800029CE0 /* ProgressHUD.bundle in Resources */,
 				493B1FC41F29F7EC00B63347 /* Main.storyboard in Resources */,
 			);
@@ -297,18 +349,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49FC8F2A1F32199C00F3AC70 /* EnlargeMyRoomViewController.swift in Sources */,
 				49C2C1EA1F2D335300957E45 /* EditProfileViewController.swift in Sources */,
 				493B1FD11F2A042900B63347 /* SignUpViewController.swift in Sources */,
 				493B1FC11F29F7EC00B63347 /* LogInViewController.swift in Sources */,
 				49C2C1D11F2BC56C00957E45 /* User.swift in Sources */,
+				49F936E61F33B30F00E841CB /* BookingTableViewCell.swift in Sources */,
+				4914878F1F30EC4900151E85 /* EnlargePostViewController.swift in Sources */,
 				49C2C1CF1F2BC41700957E45 /* ProfileViewController.swift in Sources */,
 				490F89A11F2E7FBE00A451BB /* TableViewCell.swift in Sources */,
-				490F899E1F2E616300A451BB /* ContactsViewController.swift in Sources */,
+				491EE6221F3292B9008CC966 /* EnlargeFavoriteViewController.swift in Sources */,
+				49F936DF1F331FC000E841CB /* SearchViewController.swift in Sources */,
+				49F936EB1F33CBBE00E841CB /* EnlargeBookingViewController.swift in Sources */,
 				49E697111F3079D2002DE0F7 /* MapViewController.swift in Sources */,
 				49C2C1E81F2CDD1D00957E45 /* ActivityViewController.swift in Sources */,
 				49E697151F30BEBC002DE0F7 /* FavoriteViewController.swift in Sources */,
 				49E697181F30BFFB002DE0F7 /* RoomTableViewCell.swift in Sources */,
 				49E6971D1F30D1FB002DE0F7 /* MyRoomsViewController.swift in Sources */,
+				49F936E91F33BC0700E841CB /* Booking.swift in Sources */,
 				495718CE1F2A6B0800029CE0 /* ProgressHUD.m in Sources */,
 				49E6970F1F306B3F002DE0F7 /* PostNewRoomViewController.swift in Sources */,
 				493B1FBF1F29F7EC00B63347 /* AppDelegate.swift in Sources */,

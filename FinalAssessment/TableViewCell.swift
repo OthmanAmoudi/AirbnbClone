@@ -16,8 +16,15 @@ class TableViewCell: UITableViewCell {
     
     
     var userIdCell:String!
-    
-    
+    var posIdCell:String!
+    var date:String!
+    var date2:String!
+    var ownerCell:String!
+    var latitudeCell:String!
+    var longitudeCell:String!
+    var roomDescription:String!
+    var roomPictureCell:String!
+    var roomPictureURLCell:String!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

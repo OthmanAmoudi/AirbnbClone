@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+struct Booking {
+    let bookingID:String
+    let checkin:String
+    let checkout:String
+    let roomId:String
+    let userID:String
+    let title:String
+    let roomPicURL:String
+    let latitude:String
+    let longtitude:String
+}

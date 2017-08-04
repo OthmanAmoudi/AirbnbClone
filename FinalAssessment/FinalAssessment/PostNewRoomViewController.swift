@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import DatePickerDialog
 class PostNewRoomViewController: UIViewController {
 
     
@@ -16,27 +17,15 @@ class PostNewRoomViewController: UIViewController {
     @IBOutlet weak var roomPictureContianer: UIImageView!
     @IBOutlet weak var latitudeLabel: UILabel!
     @IBOutlet weak var longitudeLabel: UILabel!
-    
-    @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var saveBtn: UIBarButtonItem!
-    @IBOutlet weak var dateLabel2: UILabel!
-    @IBOutlet weak var datePicker2: UIDatePicker!
-    
+    @IBOutlet weak var date1TF: UITextField!
+    @IBOutlet weak var date2TF: UITextField!
     var selectedRoomPicture:UIImage?
     var longtiude=String()
     var latitude=String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print("didLoad")
-        print(longtiude)
-        print(latitude)
-        
-        datePicker.addTarget(self, action: #selector(PostNewRoomViewController.datePickerChanged(datePicker:)), for: UIControlEvents.valueChanged)
-        
-        datePicker2.addTarget(self, action: #selector(PostNewRoomViewController.datePickerChanged2(datePicker2:)), for: UIControlEvents.valueChanged)
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(PostNewRoomViewController.handleImageChosen))
         roomPictureContianer.addGestureRecognizer(tap)
@@ -45,6 +34,22 @@ class PostNewRoomViewController: UIViewController {
         saveBtn?.isEnabled=false
         handleTextFields()
 
+    }
+  
+
+    
+    func myDateFunction(textField: UITextField) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        DatePickerDialog().show(title: "Chose Date", doneButtonTitle: "Done",
+                                cancelButtonTitle: "Cancel", datePickerMode: .date) {
+                                    (date) -> Void in
+                                    
+        if date != nil{
+        let strDate = dateFormatter.string(from:date!)
+        textField.text = strDate
+            }else{return}
+        }
     }
     
     @IBAction func saveBtnDidPressed(_ sender: Any) {
@@ -94,10 +99,14 @@ class PostNewRoomViewController: UIViewController {
     func handleTextFields(){
         titleTextField?.addTarget(self, action: #selector(PostNewRoomViewController.handleTextFieldDidChanged), for: UIControlEvents.editingChanged)
         descriptionTextField?.addTarget(self, action: #selector(PostNewRoomViewController.handleTextFieldDidChanged), for: UIControlEvents.editingChanged)
+        date1TF?.addTarget(self, action: #selector(PostNewRoomViewController.handleTextFieldDidChanged), for: UIControlEvents.editingChanged)
+        date2TF?.addTarget(self, action: #selector(PostNewRoomViewController.handleTextFieldDidChanged), for: UIControlEvents.editingChanged)
+        date1TF.addTarget(self, action: #selector(PostNewRoomViewController.myDateFunction(textField:)), for: UIControlEvents.touchDown)
+        date2TF.addTarget(self, action: #selector(PostNewRoomViewController.myDateFunction(textField:)), for: UIControlEvents.touchDown)
     }
 
     func handleTextFieldDidChanged(){
-        guard let title = titleTextField.text, !title.isEmpty, let desc = descriptionTextField.text, !desc.isEmpty else {
+        guard let title = titleTextField.text, !title.isEmpty, let desc = descriptionTextField.text, !desc.isEmpty,let date1 = date1TF.text, !date1.isEmpty, let date2 = date2TF.text, !date2.isEmpty else {
             saveBtn.tintColor = .red
             saveBtn.isEnabled=false
             return
@@ -107,21 +116,6 @@ class PostNewRoomViewController: UIViewController {
     }
     
 
-    func datePickerChanged(datePicker:UIDatePicker) {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = DateFormatter.Style.short
-        //dateFormatter.timeStyle = DateFormatter.Style.short
-        let strDate = dateFormatter.string(from: datePicker.date)
-        dateLabel.text = strDate
-    }
-    
-    func datePickerChanged2(datePicker2:UIDatePicker) {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateStyle = DateFormatter.Style.short
-        //dateFormatter.timeStyle = DateFormatter.Style.short
-        let strDate = dateFormatter.string(from: datePicker.date)
-        dateLabel2.text = strDate
-    }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
@@ -139,7 +133,7 @@ class PostNewRoomViewController: UIViewController {
     }
     func sendDataToDatabase(roomPictureUrl:String){
         
-        Database.database().reference().child("rooms").childByAutoId().setValue(["title": titleTextField.text!,"description": descriptionTextField.text!,"Room Picture": roomPictureUrl,"Latitude":latitudeLabel.text,"Longtitude":longitudeLabel.text,"Date From":dateLabel.text,"Date To":dateLabel2.text,"Owner":Auth.auth().currentUser?.uid])
+        Database.database().reference().child("rooms").childByAutoId().setValue(["title": titleTextField.text!,"description": descriptionTextField.text!,"Room Picture": roomPictureUrl,"Latitude":latitudeLabel.text,"Longtitude":longitudeLabel.text,"Owner":Auth.auth().currentUser?.uid, "Date From":date1TF.text!,"Date To":date2TF.text!])
     }
 
 }

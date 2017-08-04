@@ -13,5 +13,6 @@ pod 'FirebaseAuth'
 pod 'FirebaseDatabase'
 pod 'FirebaseStorage'
 pod 'ProgressHUD'
+pod 'DatePickerDialog'
 
 end

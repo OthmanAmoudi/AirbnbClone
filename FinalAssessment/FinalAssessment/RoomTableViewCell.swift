@@ -15,6 +15,13 @@ class RoomTableViewCell: UITableViewCell {
     @IBOutlet weak var dateLabelCell: UILabel!
     @IBOutlet weak var date2LabelCell: UILabel!
     
+    var roomPicURL:String!
+    var roomId:String!
+    var owner:String!
+    var longitude:String!
+    var latitude:String!
+    var roomDescription:String!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
